@@ -8,12 +8,16 @@
 <script>
     function solution(s){
         let answer="YES";
-
+         //소문자로 변환
+        s = s.toLowerCase();
+        // 단어 문자로 나누고 뒤집어 합치기
+        let reversedS = s.split('').reverse().join('');
+        if (s !== reversedS) return "NO"
         return answer;
     }
 
-    let str="goooG";
-    console.log(solution(str));
+    let s="goooG";
+    console.log(solution(s));
 </script>
 </body>
 </html>
